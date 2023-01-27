@@ -6,9 +6,11 @@ const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
   preprocess: vitePreprocess(),
-
   kit: {
-    adapter: staticAdapter()
+    paths: {
+      base: '/dud-hoomn'
+    },
+    adapter: staticAdapter(),
   }
 };
 
