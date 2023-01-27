@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        /* White and its gray 3:1 contrast jumps */
+        --white-gray-3x-0: #FFFFFF;
+        --white-gray-3x-1: #949494;
+        --white-gray-3x-2: #484848;
+        /* Black and its gray 3:1 contrast jumps */
+        --black-gray-3x-0: #000000;
+        --black-gray-3x-1: #5A5A5A;
+        --black-gray-3x-2: #ABABAB;
+        /* Halfway from black to white's maximum 3x contrast gray, and its gray 3:1 contrast jumps */
+        --soft-black-gray-3x-0: #2D2D2D;
+        --soft-black-gray-3x-1: #767676;
+        --soft-black-gray-3x-2: #D2D2D2;
+        /* Halfway from white to black's maximum 3x contrast gray, and its gray 3:1 contrast jumps */
+        --soft-white-gray-3x-0: #D2D2D2;
+        --soft-white-gray-3x-1: #767676;
+        --soft-white-gray-3x-2: #2D2D2D;
+        /* White and its gray 7:1 contrast jump */
+        --white-gray-7x-0: #FFFFFF;
+        --white-gray-7x-1: #595959;
+        /* Black and its gray 7:1 contrast jump */
+        --black-gray-7x-0: #000000;
+        --black-gray-7x-1: #959595;
+        /* Halfway from black to white's maximum 3x contrast gray, and its gray 7:1 contrast jump */
+        --soft-black-gray-7x-0: #2D2D2D;
+        --soft-black-gray-7x-1: #B9B9B9;
+        /* Halfway from white to blacks's maximum 3x contrast gray, and its gray 7:1 contrast jump */
+        --soft-white-gray-7x-0: #D2D2D2;
+        --soft-white-gray-7x-1: #3E3E3E;
+      }
+      :root {
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--soft-black-gray-3x-0);
+      }
+    </style>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
